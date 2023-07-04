@@ -40,6 +40,7 @@ html {
 }
 
 .typewriter h1 {
+    color: #fff;
     overflow: hidden;
     border-right: .1em solid orange;
     white-space: nowrap;
@@ -53,7 +54,6 @@ html {
 @keyframes typing {
     from { width: 0 }
     to { width: 100% }
-    100% {border-width: 0em;}
 }
 
 @keyframes blink-caret {
