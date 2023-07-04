@@ -99,9 +99,20 @@
           </div>
           -->
       </section>
-        <button class="w3-button w3-light-grey w3-padding-large w3-section" data-aos="fade-right">
+        <button class="w3-button w3-light-grey w3-padding-large w3-section" data-aos="fade-right" onclick="document.getElementById('id01').style.display='block'">
           <i class="fa fa-download"></i> Download Resume
         </button>
+        <div id="id01" class="w3-modal">
+          <div class="w3-modal-content w3-animate-top w3-card-4">
+            <header class="w3-container w3-teal"> 
+              <span onclick="document.getElementById('id01').style.display='none'" 
+              class="w3-button w3-display-topright">&times;</span>
+            </header>
+            <div class="w3-container">
+              <p>Resume is not available yet</p>
+            </div>
+          </div>
+        </div>
         
         <!--<h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
         <div class="w3-row-padding" style="margin:0 -16px">
