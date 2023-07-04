@@ -18,5 +18,6 @@ var no_resume = document.getElementById('id01');
 window.onclick = function(event) {
   if (event.target == no_resume) {
     no_resume.style.display = "none";
+    no_resume.style.visibility = "hidden";
   }
 }
