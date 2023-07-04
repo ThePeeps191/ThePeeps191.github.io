@@ -15,11 +15,11 @@ html {
     #main {margin-left: 0}
 }
 
-.hidden {
+/* .hidden {
     opacity: 0;
     transition: all 1s;
 }
 
 .show {
     opacity: 1;
-}
+} */
