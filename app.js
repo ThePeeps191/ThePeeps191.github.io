@@ -13,3 +13,10 @@
 // hiddenElements.forEach((el) => observer.observe(el));
 
 AOS.init();
+
+var no_resume = document.getElementById('id01');
+window.onclick = function(event) {
+  if (event.target == no_resume) {
+    no_resume.style.display = "none";
+  }
+}
