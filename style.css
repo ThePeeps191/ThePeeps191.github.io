@@ -79,7 +79,3 @@ html {
     60% { transform: rotate( 0.0deg) }
     100% { transform: rotate( 0.0deg) }
 }
-
-.v_anim {
-    transition: all .5s ease;
-}
