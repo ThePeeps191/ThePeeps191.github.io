@@ -43,7 +43,6 @@ html {
     color: #fff;
     overflow: hidden;
     border-right: .1em solid orange;
-    border-width: 0px;
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: .1em;
@@ -59,5 +58,5 @@ html {
 
 @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: orange;border-width:.1em; }
+    50% { border-color: orange }
 }
