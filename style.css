@@ -41,7 +41,6 @@ html {
 
 .typewriter h1 {
     color: #fff;
-    font-family: monospace;
     overflow: hidden;
     border-right: .15em solid orange;
     white-space: nowrap;
