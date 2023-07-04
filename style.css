@@ -42,10 +42,10 @@ html {
 .typewriter h1 {
     color: #fff;
     overflow: hidden;
-    border-right: .1em solid orange;
+    border-right: .15em solid orange;
     white-space: nowrap;
     margin: 0 auto;
-    letter-spacing: .1em;
+    letter-spacing: .15em;
     animation: 
       typing 3.5s steps(30, end),
       blink-caret .5s step-end infinite;
