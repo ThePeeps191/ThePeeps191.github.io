@@ -14,3 +14,12 @@ html {
 @media only screen and (max-width: 600px) {
     #main {margin-left: 0}
 }
+
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+}
