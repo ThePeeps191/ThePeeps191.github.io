@@ -48,7 +48,7 @@ html {
     letter-spacing: .1em;
     animation: 
       typing 3.5s steps(30, end),
-      blink-caret .5s step-end 5s;
+      blink-caret .5s step-end 8;
 }
 
 @keyframes typing {
