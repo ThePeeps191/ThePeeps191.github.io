@@ -43,6 +43,7 @@ html {
     color: #fff;
     overflow: hidden;
     border-right: .1em solid orange;
+    border-width: 0px;
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: .1em;
