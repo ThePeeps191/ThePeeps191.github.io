@@ -89,4 +89,5 @@ html {
 .icon-itch {
     background-image: url("/itch_icon.svg");
     background-position: center center;
+    color: white;
 }
