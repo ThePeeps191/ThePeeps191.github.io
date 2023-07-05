@@ -86,3 +86,7 @@ html {
 .c_white {
     color:white;
 }
+.icon-itch {
+    background-image: url("http://cdn5.iconfinder.com/data/icons/Symbolicons_Transportation/24/Car.png");
+    background-position: center center;
+}
