@@ -86,8 +86,7 @@ html {
 .c_white {
     color:white;
 }
-.icon-itch {
-    background-image: url("/itch_icon.svg");
+.thepeeps191_icon {
+    background-image: url("/thepeeps191.png");
     background-position: center center;
-    color: white;
 }
