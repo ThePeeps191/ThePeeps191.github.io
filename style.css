@@ -50,7 +50,7 @@ html {
       typing 3.5s steps(30, end),
       blink-caret .5s step-end 6;
 }
-.typewriter h2 {
+/*.typewriter h2 {
     color: #fff;
     overflow: hidden;
     border-right: .1em solid rgba(0,0,0,0);
@@ -60,7 +60,7 @@ html {
     animation: 
       typing 0.2s steps(30, end),
       blink-caret .5s step-end 6;
-}
+}*/
 
 @keyframes typing {
     from { width: 0 }
