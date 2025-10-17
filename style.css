@@ -73,25 +73,38 @@ html {
     50% { border-color: orange }
 }*/
 
+/* typewriter - accurate width + blinking during typing */
 .typewriter h1 {
   color: #fff;
-  display: inline-block;            /* required so width fits text */
-  overflow: hidden;                 /* hide not-yet-typed chars */
-  border-right: .12em solid orange; /* caret */
+  display: inline-block;               /* necessary so width applies */
+  overflow: hidden;                    /* hide not-yet-typed text */
+  border-right: .12em solid orange;    /* caret */
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: .1em;
-  width: 0ch;                       /* start collapsed in character units */
-  box-sizing: content-box;          /* make ch measure characters */
-  animation:
-    typing 2.5s steps(19, end) 1 forwards,   /* 19 = number of visible characters */
-    blink-caret .6s step-end 6 2.5s forwards;/* blink begins after typing ends */
+  width: 0px;                           /* start collapsed (pixels) */
+  box-sizing: content-box;
+  /* typing uses steps(var(--chars)) and animates to --textWidth px */
+  animation: typing 2.5s steps(var(--chars), end) 1 forwards;
 }
 
-/* Animate width from 0ch to exactly 19ch (must match steps) */
+/* blink animation — we'll add/remove this via a class */
+.typewriter h1.blink {
+  animation: typing 2.5s steps(var(--chars), end) 1 forwards,
+             blink-caret .6s step-end infinite;
+}
+
+/* When done, remove blinking and keep caret visible (optional: make it steady or hide) */
+.typewriter h1.done {
+  border-right-color: transparent; /* hide caret when done */
+  animation: none;                 /* stop other animations */
+  width: var(--textWidth, auto);
+}
+
+/* typing animates to the measured pixel width */
 @keyframes typing {
-  from { width: 0ch; }
-  to   { width: 19ch; }
+  from { width: 0px; }
+  to   { width: var(--textWidth); } /* --textWidth set by JS, e.g. "456px" */
 }
 
 @keyframes blink-caret {
