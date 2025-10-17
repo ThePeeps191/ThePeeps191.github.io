@@ -47,7 +47,8 @@ html {
     margin: 0 auto;
     letter-spacing: .1em;
     animation: 
-      typing 3.5s steps(30, end),
+      /*typing 3.5s steps(30, end),*/
+      typing 2.5s steps(19, end),
       blink-caret .5s step-end 6;
 }
 /*.typewriter h2 {
