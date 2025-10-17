@@ -39,18 +39,6 @@ html {
      }
 }
 
-.typewriter h1 {
-    color: #fff;
-    overflow: hidden;
-    border-right: .1em solid rgba(0,0,0,0);
-    white-space: nowrap;
-    margin: 0 auto;
-    letter-spacing: .1em;
-    animation: 
-      /*typing 3.5s steps(30, end),*/
-      typing 2.5s steps(19, end),
-      blink-caret .5s step-end 6;
-}
 /*.typewriter h2 {
     color: #fff;
     overflow: hidden;
@@ -63,6 +51,18 @@ html {
       blink-caret .5s step-end 6;
 }*/
 
+/*.typewriter h1 {
+    color: #fff;
+    overflow: hidden;
+    border-right: .1em solid rgba(0,0,0,0);
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .1em;
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end 6;
+}
+
 @keyframes typing {
     from { width: 0 }
     to { width: 100% }
@@ -71,6 +71,32 @@ html {
 @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: orange }
+}*/
+
+/* typewriter CSS - replace your current .typewriter h1 and @keyframes typing */
+.typewriter h1 {
+  color: #fff;
+  display: inline-block;         /* important so width is the content width */
+  overflow: hidden;              /* hides the not-yet-typed characters */
+  border-right: .12em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .1em;
+  width: 0ch;                    /* start collapsed in characters */
+  box-sizing: content-box;       /* ensure ch width is measured as characters */
+  animation:
+    typing 2.5s steps(19, end) 1 forwards,   /* 19 = number of visible characters */
+    blink-caret .6s step-end 6 2.5s forwards;/* blink starts after typing ends */
+}
+
+/* animate width from 0 → exactly 19 characters */
+@keyframes typing {
+  from { width: 0ch; }
+  to   { width: 19ch; }          /* must match steps(...) number */
+}
+
+@keyframes blink-caret {
+  50% { border-color: transparent; }
 }
 
 .wave {
